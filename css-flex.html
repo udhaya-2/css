@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<style>
+    body{
+        text-align: center;
+        border: 3px solid #000;
+        border-top:1px
+    }
+   .flex-content{
+    display: flex;
+    height: 200px;
+    
+   }
+    header{
+        border-top: 3px solid #000;
+        border-bottom: 3px solid #000;
+        padding: 5px;
+        background-color: blueviolet;
+ 
+    }
+    .menu{
+        background-color: blue;
+        padding: 10px;
+        flex-basis: 200px;
+    }
+    .content{
+        border-right: 3px solid #000;
+        border-left: 3px solid #000;
+        padding: 10px;
+        background-color: red;
+        flex-grow: 1;
+    }
+    aside{
+        border-top:1px;
+        padding: 10px;
+        background-color: yellow;
+        flex-basis:200px;
+    }
+    footer{     
+       border-top:3px solid #000;
+        padding: 5px;
+        background-color:orange ;
+    }
+</style>
+<html lang="en">
+    <head>
+        <title>flex</title>
+    </head>
+    <body>
+        <header><h4>Home</h4></header>
+        <div class="flex-content">
+            <div class="menu">
+                <h4>Menu</h4>
+            </div>
+            <div class="content">
+                <h4>Content</h4>
+            </div>
+            <aside>
+                <h4>SideBar</h4>
+            </aside> 
+        </div>
+            <footer> Footer </footer>
+
+       
+    </body>
+</html>
