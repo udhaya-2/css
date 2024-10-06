@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        body{
+            background-color:aquamarine;
+           
+        }       
+        .truck{
+            position:absolute;
+            top: 200px;
+            animation-name:truck-animation ;
+            animation-duration: 5s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes truck-animation{
+          form{transform: translateX(-300px);}
+          to{transform: translateX(1600px);}
+        }
+        .cloud{
+            background-color: aquamarine;
+
+        }
+        
+    </style>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="UTF-8"> 
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>animation</title>
     </head>
-    <body>gi
-        <img src="C:\Users\Administrator\Desktop\notepad\css-flex\image\car.jpg" alt="car">
+    <body>
+        
+         <img src="image/car.png" class="truck" width="300px">
     </body>
 </html>
